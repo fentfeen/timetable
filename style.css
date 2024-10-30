@@ -7,8 +7,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #121212;
+    color: #f0f0f0;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -20,58 +20,121 @@ body {
 }
 
 h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
 }
 
-button, select {
-    margin: 1rem;
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #f0f0f0;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.toggle-text {
+    margin-left: 1rem;
+    vertical-align: middle;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.dropdown {
+    margin: 1rem 0;
+}
+
+.dropdown label {
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
+}
+
+select {
     padding: 0.5rem;
     font-size: 1rem;
-    cursor: pointer;
+    background-color: #333;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
 }
 
+/* Table Styling */
 table {
     width: 100%;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     border-collapse: collapse;
     overflow-x: auto;
 }
 
 th, td {
-    padding: 0.75rem;
-    border: 1px solid #ccc;
+    padding: 1rem;
+    border: 1px solid #444;
+    text-align: center;
 }
 
 th {
     background-color: #333;
-    color: white;
-}
-
-td {
-    background-color: #f9f9f9;
-}
-
-/* Dark Mode Styles */
-body.dark-mode {
-    background-color: #121212;
     color: #f0f0f0;
 }
 
-body.dark-mode th {
-    background-color: #444;
+td {
+    background-color: #1e1e1e;
+    color: #ddd;
+    transition: background-color 0.3s;
 }
 
-body.dark-mode td {
+td:hover {
     background-color: #333;
 }
 
-/* Responsive Styling */
-@media (max-width: 768px) {
-    table, th, td {
-        font-size: 0.8rem;
-    }
+/* Dark Mode Styles */
+body.light-mode {
+    background-color: #f9f9f9;
+    color: #333;
+}
 
-    th, td {
-        padding: 0.5rem;
-    }
+body.light-mode th {
+    background-color: #ddd;
+    color: #333;
+}
+
+body.light-mode td {
+    background-color: #f0f0f0;
+    color: #333;
 }
