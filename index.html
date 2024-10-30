@@ -6,18 +6,25 @@
     <title>Timetable</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="dark-mode">
     <div class="container">
-        <h1>Timetable</h1>
+        <h1>My Timetable</h1>
 
         <!-- Dark Mode Toggle -->
-        <button id="darkModeToggle">Toggle Dark Mode</button>
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle" checked>
+            <span class="slider round"></span>
+            <span class="toggle-text">Dark Mode</span>
+        </label>
 
         <!-- Week Selector Dropdown -->
-        <select id="weekSelector">
-            <option value="week1">Week 1</option>
-            <option value="week2">Week 2</option>
-        </select>
+        <div class="dropdown">
+            <label for="weekSelector">Select Week:</label>
+            <select id="weekSelector">
+                <option value="week1">Week 1</option>
+                <option value="week2">Week 2</option>
+            </select>
+        </div>
 
         <!-- Timetable Tables -->
         <div id="timetable">
@@ -36,11 +43,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>Monday</td><td>Music</td><td>English</td><td></td><td>Humanities</td><td>Mathematics</td><td></td><td>Continuing French</td></tr>
-                    <tr><td>Tuesday</td><td>Continuing French</td><td>Science</td><td></td><td>English</td><td>Music</td><td></td><td>Mathematics</td></tr>
-                    <tr><td>Wednesday</td><td>Science</td><td>Continuing French</td><td></td><td>Mathematics</td><td>Health</td><td></td><td>Systems Engineering</td></tr>
-                    <tr><td>Thursday</td><td>Mathematics</td><td>English</td><td></td><td>RAVE</td><td>Health</td><td></td><td>Humanities</td></tr>
-                    <tr><td>Friday</td><td>Systems Engineering</td><td>Graphics</td><td></td><td>Tutor Group</td><td>Physical Education</td><td></td><td>English</td></tr>
+                    <!-- Add rows for Week 1 (e.g., Monday, Tuesday) -->
                 </tbody>
             </table>
 
@@ -59,11 +62,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>Monday</td><td>Continuing French</td><td>Science</td><td></td><td>English</td><td>Mathematics</td><td></td><td>Graphics</td></tr>
-                    <tr><td>Tuesday</td><td>Continuing French</td><td>Mathematics</td><td></td><td>Humanities</td><td>Music</td><td></td><td>Physical Education</td></tr>
-                    <tr><td>Wednesday</td><td>Continuing French</td><td>English</td><td></td><td>Mathematics</td><td>Music</td><td></td><td>Systems Engineering</td></tr>
-                    <tr><td>Thursday</td><td>Science</td><td>English</td><td></td><td>Graphics</td><td>Physical Education</td><td></td><td>English</td></tr>
-                    <tr><td>Friday</td><td>Humanities</td><td>Systems Engineering</td><td></td><td>Tutor Group</td><td>Mathematics</td><td></td><td>English</td></tr>
+                    <!-- Add rows for Week 2 (e.g., Monday, Tuesday) -->
                 </tbody>
             </table>
         </div>
