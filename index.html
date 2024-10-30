@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Timetable</h1>
+
+        <!-- Dark Mode Toggle -->
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+
+        <!-- Week Selector Dropdown -->
+        <select id="weekSelector">
+            <option value="week1">Week 1</option>
+            <option value="week2">Week 2</option>
+        </select>
+
+        <!-- Timetable Tables -->
+        <div id="timetable">
+            <!-- Week 1 Table -->
+            <table id="week1">
+                <thead>
+                    <tr>
+                        <th>Day/Period</th>
+                        <th>Period 1</th>
+                        <th>Period 2</th>
+                        <th>Recess</th>
+                        <th>Period 3</th>
+                        <th>Period 4</th>
+                        <th>Lunch</th>
+                        <th>Period 5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Monday</td><td>Music</td><td>English</td><td></td><td>Humanities</td><td>Mathematics</td><td></td><td>Continuing French</td></tr>
+                    <tr><td>Tuesday</td><td>Continuing French</td><td>Science</td><td></td><td>English</td><td>Music</td><td></td><td>Mathematics</td></tr>
+                    <tr><td>Wednesday</td><td>Science</td><td>Continuing French</td><td></td><td>Mathematics</td><td>Health</td><td></td><td>Systems Engineering</td></tr>
+                    <tr><td>Thursday</td><td>Mathematics</td><td>English</td><td></td><td>RAVE</td><td>Health</td><td></td><td>Humanities</td></tr>
+                    <tr><td>Friday</td><td>Systems Engineering</td><td>Graphics</td><td></td><td>Tutor Group</td><td>Physical Education</td><td></td><td>English</td></tr>
+                </tbody>
+            </table>
+
+            <!-- Week 2 Table -->
+            <table id="week2" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>Day/Period</th>
+                        <th>Period 1</th>
+                        <th>Period 2</th>
+                        <th>Recess</th>
+                        <th>Period 3</th>
+                        <th>Period 4</th>
+                        <th>Lunch</th>
+                        <th>Period 5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Monday</td><td>Continuing French</td><td>Science</td><td></td><td>English</td><td>Mathematics</td><td></td><td>Graphics</td></tr>
+                    <tr><td>Tuesday</td><td>Continuing French</td><td>Mathematics</td><td></td><td>Humanities</td><td>Music</td><td></td><td>Physical Education</td></tr>
+                    <tr><td>Wednesday</td><td>Continuing French</td><td>English</td><td></td><td>Mathematics</td><td>Music</td><td></td><td>Systems Engineering</td></tr>
+                    <tr><td>Thursday</td><td>Science</td><td>English</td><td></td><td>Graphics</td><td>Physical Education</td><td></td><td>English</td></tr>
+                    <tr><td>Friday</td><td>Humanities</td><td>Systems Engineering</td><td></td><td>Tutor Group</td><td>Mathematics</td><td></td><td>English</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
