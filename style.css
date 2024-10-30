@@ -1,0 +1,77 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+button, select {
+    margin: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    margin: 1rem 0;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+
+th, td {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+body.dark-mode th {
+    background-color: #444;
+}
+
+body.dark-mode td {
+    background-color: #333;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    table, th, td {
+        font-size: 0.8rem;
+    }
+
+    th, td {
+        padding: 0.5rem;
+    }
+}
